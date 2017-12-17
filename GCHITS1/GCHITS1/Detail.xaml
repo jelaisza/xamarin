@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GCHITS1.Detail"
+             BackgroundColor="#EEEEEE">
+
+    <StackLayout>
+
+        <Grid ColumnSpacing="-7">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button Clicked="Info"  
+             ContentLayout="Top,0" 
+             Image="ic_accessibility_white_24dp.png" 
+             TextColor="White" 
+             BackgroundColor="#E57373" 
+             BorderRadius="0"
+             HeightRequest="80"
+             WidthRequest="40" 
+             Grid.Row="0" Grid.Column="0" 
+             Text="Information"/>
+
+            <Button Clicked="Medical"  
+             ContentLayout="Top,0" 
+             Image="ic_accessibility_white_24dp.png" 
+             TextColor="White" 
+             BackgroundColor="#E57373" 
+             BorderRadius="0"
+             HeightRequest="80"
+             WidthRequest="40" 
+             Grid.Row="0" Grid.Column="1" 
+             Text="Medical"/>
+
+            <Button Clicked="Dental"  
+             ContentLayout="Top,0" 
+             Image="ic_accessibility_white_24dp.png" 
+             TextColor="White" 
+             BackgroundColor="#E57373" 
+             BorderRadius="0"
+             HeightRequest="80"
+             WidthRequest="40" 
+             Grid.Row="0" Grid.Column="2" 
+             Text="Dental"/>
+            
+        </Grid>
+
+
+        <ScrollView Margin="15,-50,15,10">
+            <StackLayout >
+            <Frame VerticalOptions="CenterAndExpand" >
+                    <StackLayout Orientation="Vertical">
+
+                        <Label Text="Name" FontSize="17" TextColor="Black" FontAttributes="Bold"/>
+                        <Label x:Name="fullname" FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="Requirement Status" FontSize="17" TextColor="Black" FontAttributes="Bold"/>
+                        <Label x:Name="req_status" FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="Course"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="course"  FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="Age"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="age"  FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="Birthday"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="birthday"  FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="Status" FontSize="17" TextColor="Black" FontAttributes="Bold"/>
+                        <Label x:Name="status" FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="Contact"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="contact"  FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="History"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="history"  FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="Accident"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="accident"  FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="Accident Date"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="accidentdate"  FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="Name"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="e_name"  FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+
+
+
+    </StackLayout>
+ 
+</ContentPage>

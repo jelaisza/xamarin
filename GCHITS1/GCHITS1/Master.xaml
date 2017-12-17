@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GCHITS1.Master"
+             Title="Featured News"
+             BackgroundColor="White"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Menu" TextColor="White" FontSize="40" HorizontalOptions="Fill" HorizontalTextAlignment="Center" BackgroundColor="#E57373"/>
+            <Button x:Name="Detail" Text="Home" TextColor="#E57373" BackgroundColor="White"/>
+            <Button x:Name="Announcement" Text="Announcement" TextColor="#E57373" BackgroundColor="White"/>
+            <Button x:Name="AvailMed" Text="Available Medicine" TextColor="#E57373" BackgroundColor="White"/>
+            <Button x:Name="Medical" Text="Medical" TextColor="#E57373" BackgroundColor="White"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

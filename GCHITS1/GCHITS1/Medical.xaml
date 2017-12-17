@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GCHITS1.Medical"
+              BackgroundColor="#EEEEEE">
+
+    <StackLayout>
+
+        <Grid ColumnSpacing="-7">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button Clicked="Info"  
+             ContentLayout="Top,0" 
+             Image="ic_accessibility_white_24dp.png" 
+             TextColor="White" 
+             BackgroundColor="#E57373" 
+             BorderRadius="0"
+             HeightRequest="80"
+             WidthRequest="40" 
+             Grid.Row="0" Grid.Column="0" 
+             Text="Information"/>
+
+            <Button 
+             ContentLayout="Top,0" 
+             Image="ic_accessibility_white_24dp.png" 
+             TextColor="White" 
+             BackgroundColor="#E57373" 
+             BorderRadius="0"
+             HeightRequest="80"
+             WidthRequest="40" 
+             Grid.Row="0" Grid.Column="1" 
+             Text="Medical"/>
+
+            <Button Clicked="Dental"  
+             ContentLayout="Top,0" 
+             Image="ic_accessibility_white_24dp.png" 
+             TextColor="White" 
+             BackgroundColor="#E57373" 
+             BorderRadius="0"
+             HeightRequest="80"
+             WidthRequest="40" 
+             Grid.Row="0" Grid.Column="2" 
+             Text="Dental"/>
+
+        </Grid>
+
+
+        <ScrollView Margin="15,-50,15,10">
+            <StackLayout >
+                <Frame VerticalOptions="CenterAndExpand" >
+                    <StackLayout Orientation="Vertical">
+
+                        <Label Text="Blood Pressure" FontSize="17" TextColor="Black" FontAttributes="Bold"/>
+                        <Label x:Name="pe_bp" FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="Body Mass Index"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="pe_bmi"  FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="Chest"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="pe_chest"  FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="CR"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="pe_cr"  FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="Temperature" FontSize="17" TextColor="Black" FontAttributes="Bold"/>
+                        <Label x:Name="pe_temp" FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="Heart"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="pe_heart"  FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="RR"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="pe_rr"  FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="Acuity"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="pe_activity"  FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="Abdomen"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="pe_abdomen"  FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="Weight"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="pe_weight"  FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="Height"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="pe_height"  FontSize="17" TextColor="Black" FontAttributes="None" />
+                        
+                        <Label Text="Skin"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="pe_skin"  FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="Extremities"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="pe_extremities"  FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        
+                        <Label Text="Heent"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="pe_heent"  FontSize="17" TextColor="Black" FontAttributes="None" />
+
+
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+
+
+
+    </StackLayout>
+</ContentPage>
+    

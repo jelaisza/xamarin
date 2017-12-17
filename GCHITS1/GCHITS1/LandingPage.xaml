@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GCHITS1"
+             x:Class="GCHITS1.LandingPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImage="background.jpg">
+
+    <StackLayout Padding="30" Spacing="10">
+
+
+        <!--<Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="10*"/>
+            </Grid.ColumnDefinitions>-->
+
+
+            <!--<Image Source="lock.png" 
+                  
+                  WidthRequest="5"
+                  HeightRequest="5"
+            Grid.Row="0" Grid.Column="0"/>-->
+
+
+        
+        <Entry Placeholder="Username" x:Name="username"/>
+            <Entry Placeholder="Password" x:Name="password"/>
+
+        <!--<local:RoundedEntry Text="Custom Entry"
+                            FontSize="30" />-->
+
+        <Button 
+            Text="LOGIN"    
+            BackgroundColor="#E57373"
+            BorderWidth="1" 
+            WidthRequest="330"
+            HeightRequest="50"
+            BorderRadius="30" 
+            BorderColor="White"
+            TextColor = "White"
+            VerticalOptions = "Center"
+            HorizontalOptions = "Center"
+            Clicked="loginpage" />
+    </StackLayout>
+</ContentPage>

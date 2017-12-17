@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GCHITS1.Dental"
+             BackgroundColor="#EEEEEE">
+
+    <StackLayout>
+
+        <Grid ColumnSpacing="-7">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button Clicked="Info"  
+             ContentLayout="Top,0" 
+             Image="ic_accessibility_white_24dp.png" 
+             TextColor="White" 
+             BackgroundColor="#E57373" 
+             BorderRadius="0"
+             HeightRequest="80"
+             WidthRequest="40" 
+             Grid.Row="0" Grid.Column="0" 
+             Text="Information"/>
+
+            <Button Clicked="Medical"  
+             ContentLayout="Top,0" 
+             Image="ic_accessibility_white_24dp.png" 
+             TextColor="White" 
+             BackgroundColor="#E57373" 
+             BorderRadius="0"
+             HeightRequest="80"
+             WidthRequest="40" 
+             Grid.Row="0" Grid.Column="1" 
+             Text="Medical"/>
+
+            <Button 
+             ContentLayout="Top,0" 
+             Image="ic_accessibility_white_24dp.png" 
+             TextColor="White" 
+             BackgroundColor="#E57373" 
+             BorderRadius="0"
+             HeightRequest="80"
+             WidthRequest="40" 
+             Grid.Row="0" Grid.Column="2" 
+             Text="Dental"/>
+
+        </Grid>
+
+        <ScrollView Margin="15,-20,15,10">
+            <StackLayout >
+                <Frame VerticalOptions="CenterAndExpand" >
+                    <StackLayout Orientation="Vertical">
+
+                        <Label Text="Tongue" FontSize="17" TextColor="Black" FontAttributes="Bold"/>
+                        <Label x:Name="d_tongue" FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="Cheeks"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="d_cheeks"  FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="Kidney"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="d_kidney"  FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="Palate"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="d_palate"  FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="Allergies" FontSize="17" TextColor="Black" FontAttributes="Bold"/>
+                        <Label x:Name="d_allergies" FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="Liver"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="d_liver"  FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="Tonsils"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="d_tonsils"  FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="Heart Disease"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="d_heartdisease"  FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="Others"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="d_others"  FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="Lips"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="d_lips"  FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="Blood Dyscracia"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="d_blood"  FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="Hygiene"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="d_hygiene"  FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="Floor of Mouth"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="d_floor"  FontSize="17" TextColor="Black" FontAttributes="None" />
+
+
+                        <Label Text="Diabetes"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="d_diabetes"  FontSize="17" TextColor="Black" FontAttributes="None" />
+
+
+                        <Label Text="Upper Left"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="upper_left"  FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="Upper Right"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="upper_right"  FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="Lower Left"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="lower_left"  FontSize="17" TextColor="Black" FontAttributes="None" />
+
+                        <Label Text="Lower Right"  FontSize="17" TextColor="Black" FontAttributes="Bold" />
+                        <Label x:Name="lower_right"  FontSize="17" TextColor="Black" FontAttributes="None" />
+
+
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+
+
+
+    </StackLayout>
+</ContentPage>
+

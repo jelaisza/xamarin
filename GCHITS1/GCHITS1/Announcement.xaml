@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GCHITS1.Announcement"
+             >
+    <ContentPage.Content>
+
+        <ScrollView>
+            <StackLayout>
+                <ListView x:Name="GCHITS" HasUnevenRows="True" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+
+                            <ViewCell>
+                                <ViewCell.View>
+                                    <StackLayout Spacing="10" Padding="5">
+                                        <Label Text="{Binding a_subject}" 
+                                               FontSize="25" 
+                                               FontAttributes="Bold" 
+                                               HorizontalOptions="CenterAndExpand" 
+                                               TextColor="Black" 
+                                              />
+                                        <Label Text="{Binding a_content}" 
+                                               FontSize="15" 
+                                               FontAttributes="Italic" 
+                                               TextColor="Black"
+                                             />
+
+                                        <Image Source="{Binding userPic}" 
+                                               WidthRequest="200" 
+                                               HeightRequest="200"
+                                            />
+                                        
+                                        <Label Text="{Binding a_by}" 
+                                               FontSize="10" 
+                                               FontAttributes="Italic" 
+                                               TextColor="Blue"
+                                             />
+
+                                    </StackLayout>
+                                </ViewCell.View>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>
